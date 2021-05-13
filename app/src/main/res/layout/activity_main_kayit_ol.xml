@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGirisYap"
+    android:orientation="horizontal"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/kayitgeributton"
+                android:layout_width="54dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:paddingVertical="50dp"
+                android:drawableLeft="@drawable/backbutton" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="361dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/giris_user_logo" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center|bottom"
+                android:text="Kayıt Sayfası"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/kayitKullaniciAdi"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/giris_useraccount"
+                android:ems="10"
+                android:hint=" Kullanıcı Adı Giriniz"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/kayitSifre"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/giris_userlock"
+                android:ems="10"
+                android:hint=" Şifre Giriniz"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/KayitKullaniciAdi" />
+
+            <Button
+                android:id="@+id/kaydetButon"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center"
+                android:text="Kayıt"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/KayitSifre" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

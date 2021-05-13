@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainGirisYap"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="731dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/girisgeributton"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons"
+                android:drawableLeft="@drawable/backbutton" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="361dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/giris_user_logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center|bottom"
+                android:text="Merhaba, Sayın Kullanıcı"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/kullaniciadi"
+                android:layout_width="382dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/giris_useraccount"
+                android:ems="10"
+                android:hint=" Kullanıcı Adı Giriniz"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/sifre"
+                android:layout_width="382dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/giris_userlock"
+                android:ems="10"
+                android:hint=" Şifre Giriniz"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/white" />
+
+
+            <Button
+                android:id="@+id/girisGirisButon"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:text="Giriş Yap"
+                android:background="@drawable/buttons"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/girisKayitButon"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="150dp"
+                android:text="Kayıt Ol"
+                android:background="@drawable/buttons"
+                android:layout_gravity="center"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
